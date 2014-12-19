@@ -113,6 +113,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Django Debug Middleware
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'django_app.urls'
@@ -140,8 +142,9 @@ INSTALLED_APPS = (
 
     'rest_framework',
     'django_app',
-    #'api',
+    'debug_toolbar',
 
+    #'api',
 )
 
 EMAIL_SUBJECT_PREFIX = '[subject] '

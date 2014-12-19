@@ -1,5 +1,6 @@
-Django
+Django==1.7.1
 djangorestframework
 django-filter
 markdown
 psycopg2
+django-debug-toolbar==1.2.0
