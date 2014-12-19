@@ -5,6 +5,6 @@ web:
   links:
     - db
   ports:
-    - "8000:8080"
+    - "8080:8080"
   volumes:
     - .:/app
