@@ -143,16 +143,20 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'django.contrib.admin',
-
     'debug_toolbar',
+
+    'core',
 
 )
 
 EMAIL_SUBJECT_PREFIX = '[subject] '
 
-INTERNAL_IPS = ('127.0.0.1', '10.0.2.2', '208.54.38.236')
-
 # django-debug-toolbar settings
+
+# Add your public ip here
+#  $> wget -qO- http://ipecho.net/plain ; echo
+INTERNAL_IPS = ('127.0.0.1', '10.0.2.2',)
+
 DEBUG_TOOLBAR_CONFIG = {
     'INTERCEPT_REDIRECTS': False,
 }
