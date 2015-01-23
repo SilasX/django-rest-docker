@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'grappelli',
     'django.contrib.admin',
     'debug_toolbar',
 
