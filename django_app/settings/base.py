@@ -1,5 +1,3 @@
-# Django settings for mauifloralcom project.
-
 import os
 import sys
 
@@ -7,18 +5,10 @@ import sys
 SECRET_KEY = '*es967)(w3wk)pj^g$cj80^5f&7f0a8^k%$w*6j$w0yfe(aw2l'
 
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
-UPLOAD_DIR = ""
-
-# Modify sys.path to include the lib directory
-sys.path.append(os.path.join(PROJECT_ROOT, "lib"))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-# django-debug-toolbar settings
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': False,
-}
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -146,7 +136,6 @@ INSTALLED_APPS = (
     'debug_toolbar',
 
     'core',
-
 )
 
 EMAIL_SUBJECT_PREFIX = '[subject] '
@@ -160,6 +149,7 @@ INTERNAL_IPS = ('127.0.0.1', '10.0.2.2',)
 DEBUG_TOOLBAR_CONFIG = {
     'INTERCEPT_REDIRECTS': False,
 }
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
