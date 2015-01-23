@@ -141,8 +141,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'debug_toolbar',
+    'rest_framework',
 
-    #'api',
+    'api',
 )
 
 EMAIL_SUBJECT_PREFIX = '[subject] '
