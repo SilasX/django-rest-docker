@@ -1,10 +1,10 @@
 django-rest-docker
 ==================
 
-django rest framework ready to rock and roll with fig+docker
+django rest framework ready to rock and roll with docker-compose+docker
 
-    fig build web
-    fig run web migrate
-    fig up
+    docker-compose build web
+    docker-compose run web migrate
+    docker-compose up
     #in another terminal
-    fig run web syncdb
+    docker-compose run web syncdb
